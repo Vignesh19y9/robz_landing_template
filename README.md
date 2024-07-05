@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Vivid Landing Page Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a ready to use template for any landing page you need, built with React, NextJS, and Tailwind CSS. 
 
-Currently, two official plugins are available:
+Modelled after the [Vivid landing page](https://vivid.lol).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> NOTE: If you are looking for a simpler alternative that is flatter and uses JS instead of TS, check out our [simple template](https://github.com/vivid-labs/vivid-landing-template-simple)!
 
-## Expanding the ESLint configuration
+## Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![vivid-template-pic](https://user-images.githubusercontent.com/62365335/202585708-82c27ea9-85fc-491f-b991-d4005651b0c2.png)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Fully modular and easy to extend
+
+- Perfect lighthouse scores for great SEO
+
+- Very accessible, passing checks for screen-readers and other browsing aids
+
+- Easily customizable via Vivid, Tailwind configuration, global style presets, and component props
+
+- Built-in light and dark modes
+
+## Getting Started
+
+1. Install dependencies with `yarn install` (or the equivalent for other package managers)
+
+2. Run the test app with `yarn dev`
+
+## Customizing
+
+This template is made to be easily customizable! Using Vivid, you can command-click on any part of the page and immediately edit its code. Check out the [Vivid docs](https://docs.vivid.lol) for more information on how to style in-browser!
+
+The components in the `src/components` directory provide an easy way to extend the page.
+
+If you want to edit colors or fonts, simply edit `styles/globals.css` or `tailwind.config.js`.
