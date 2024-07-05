@@ -9,12 +9,12 @@ import { useEffect } from "react";
 import { useDarkMode, useEffectOnce } from "usehooks-ts";
 
 // Initialize Vivid (https://vivid.lol)
-if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
-  import("vivid-studio").then((v) => v.run());
-  import("vivid-studio/style.css");
-}
+// if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
+//   import("vivid-studio").then((v) => v.run());
+//   import("vivid-studio/style.css");
+// }
 
-const siteTitle = "Vivid — Build visually. Code faster.";
+const siteTitle = "Robz — Landing Template.";
 const siteDescription =
   "Make CSS styling a breeze with Vivid's in-browser visual editor that automatically updates your code.";
 
@@ -45,15 +45,11 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link rel="icon" href="/icons/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/robzlogo.png" />
+        <link rel="icon" href="/icons/robzlogo.png" />
         <meta
           property="og:image"
-          content="https://vivid.lol/images/landing-page.png"
+          content="" //"https://vivid.lol/images/landing-page.png"
         />
       </Head>
       <NextSeo
