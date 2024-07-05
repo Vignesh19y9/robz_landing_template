@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { LinkButton } from "../components/LinkButton";
-
+import Link from "next/link";
 // Built with Vivid (https://vivid.lol) ⚡️
 
 export const Footer = () => {
@@ -22,6 +22,10 @@ export const Footer = () => {
         >
           Join our Slack!
         </LinkButton>
+
+        <Link href="/privacy">
+          <p>Privacy Policy</p>
+        </Link>
       </div>
     </footer>
   );

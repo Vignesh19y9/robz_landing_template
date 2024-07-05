@@ -7,6 +7,7 @@ import Head from "next/head";
 import { NextSeo } from "next-seo";
 import { useEffect } from "react";
 import { useDarkMode, useEffectOnce } from "usehooks-ts";
+import { useRouter } from "next/router"; // Import useRouter
 
 // Initialize Vivid (https://vivid.lol)
 // if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
@@ -20,6 +21,7 @@ const siteDescription =
 
 const App = ({ Component, pageProps }: AppProps) => {
   const { isDarkMode, toggle: toggleDarkMode } = useDarkMode();
+  const router = useRouter(); // Initialize useRouter
 
   useEffect(() => {
     if (isDarkMode) {
@@ -66,6 +68,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         {...pageProps}
         isDarkMode={isDarkMode}
         toggleDarkMode={toggleDarkMode}
+        router={router} // Pass router as a prop to the component
       />
     </>
   );
