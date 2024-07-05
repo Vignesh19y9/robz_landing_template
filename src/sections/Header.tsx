@@ -41,9 +41,14 @@ export const Header = ({
   const Logo = () => (
     <Link href="/">
       <div className="items-center block gap-1 row">
-        <Image src="/images/logo.png" alt="Vivid logo" height="40" width="40" />
+        <Image
+          src="/icons/robzlogo.png"
+          alt="Robz logo"
+          height="40"
+          width="40"
+        />
         <div className="text-3xl font-bold">
-          <GradientText className="pink-blue">Vivid</GradientText>
+          <GradientText className="pink-blue">Robz</GradientText>
         </div>
       </div>
     </Link>
