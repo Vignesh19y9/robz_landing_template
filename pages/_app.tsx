@@ -23,6 +23,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   useEffect(() => {
     if (isDarkMode) {
+      //Change Dark Mode here
       document.documentElement.classList.add("dark");
       document.documentElement.style.setProperty("color-scheme", "dark");
     } else {
