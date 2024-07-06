@@ -6,6 +6,7 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  basePath: "/template",
 };
 
 module.exports = nextConfig;
