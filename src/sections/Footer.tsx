@@ -16,16 +16,22 @@ export const Footer = () => {
           />
           <div className="text-sm text-light">&copy; robzapps, Inc. 2022</div>
         </div>
-        <LinkButton
+        {/* <LinkButton
           href="https://join.slack.com/t/vivid-jqa6824/shared_invite/zt-1f7tbxl86-wruO1aM7FYmEdNaOOnYCMQ"
           aria-label="Join Slack"
         >
           Join our Slack!
-        </LinkButton>
-
-        <Link href="/privacy">
-          <p>Privacy Policy</p>
-        </Link>
+        </LinkButton> */}
+        <div className="items-center gap-4 row">
+          <Link href="/privacy">
+            <div className="text-sm text-light">Privacy Policy</div>
+          </Link>
+          <p>|</p>
+          <Link href="/terms">
+            <div className="text-sm text-light">Terms of Use</div>
+          </Link>
+        </div>
+        <div className="text-sm text-light">robzapps1@gmail.com</div>
       </div>
     </footer>
   );
