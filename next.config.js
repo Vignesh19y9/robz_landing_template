@@ -7,16 +7,6 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/template",
-        basePath: false,
-        permanent: false,
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;
