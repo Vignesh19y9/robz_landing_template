@@ -7,6 +7,7 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  assetPrefix: "https://robz-template.vercel.app",
 };
 
 module.exports = nextConfig;
