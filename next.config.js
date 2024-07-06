@@ -7,7 +7,7 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
-  assetPrefix: "/template",
+  // assetPrefix: "/template",
   // assetPrefix: process.env.ASSET_PREFIX || "https://robz-template.vercel.app",
 };
 
