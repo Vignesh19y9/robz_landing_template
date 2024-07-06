@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/template",
+  basePath: "/",
   reactStrictMode: true,
   swcMinify: true,
   i18n: {
